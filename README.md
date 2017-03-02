@@ -18,8 +18,9 @@ bundle install
 ```
 
 ```ruby
-access_key = ENV['AWS_ACCESS_KEY_ID']
-secret_key = ENV['AWS_SECRET_ACCESS_KEY']
+ENV['AWS_ACCESS_KEY_ID']
+ENV['AWS_SECRET_ACCESS_KEY']
+ENV['AWS_SQS_URL']
 ```
 
 * Database initialization
