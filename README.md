@@ -6,19 +6,32 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
-
+  2.3.0 >=
 * System dependencies
 
 * Configuration
 
-* Database creation
+please set environment variables
+
+```
+bundle install
+```
+
+```ruby
+access_key = ENV['AWS_ACCESS_KEY_ID']
+secret_key = ENV['AWS_SECRET_ACCESS_KEY']
+```
 
 * Database initialization
 
-* How to run the test suite
+```
+rake db:migrate
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+* Test aws ses bounce
 
-* Deployment instructions
+http://localhost:3000/users/sign_up
+
+`bounce@simulator.amazonses.com`
 
 * ...
