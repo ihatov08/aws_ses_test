@@ -8,3 +8,5 @@ url = ENV['AWS_SQS_URL']
 
 msg = sqs.receive_message({queue_url: url})
 puts msg
+
+#試しに変更
